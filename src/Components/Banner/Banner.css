@@ -1,0 +1,10 @@
+.bgimg {
+    background-image: url('../../assets/banner/bannerbg.png');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
+.bg-title{
+    background: linear-gradient(to right, #BD1F17 0%, );
+
+}
