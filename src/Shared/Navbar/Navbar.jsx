@@ -2,7 +2,7 @@ import logo from '../../assets/nav/Logo.png'
 
 const Navbar = () => {
     return (
-        <div className=' flex justify-between items-center max-w-[1280px] mx-auto xl:px-20 lg:px-12 md:px-5 px-5 xl:py-[32px] lg:py-[26px] md:py-[24px] py-[20px] sticky top-0 left-0'>
+        <div className=' flex justify-between items-center max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 xl:py-[32px] lg:py-[26px] md:py-[24px] py-[20px] sticky top-0 left-0'>
             <div className=' flex items-center gap-12'>
                 <img src={logo} alt="" />
                 <ul className=' flex items-center gap-10 text-white'>
