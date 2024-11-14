@@ -1,6 +1,9 @@
 import { useEffect, useState } from 'react';
 import aboutImg from '../../assets/about/aboutImg.png'
-import { FiPhoneCall } from "react-icons/fi";
+import AboutTab from './AboutTab';
+import ExperienceTab from './ExperienceTab';
+import ContactTab from './ContactTab';
+import './About.css'
 
 
 const About = () => {
@@ -21,24 +24,27 @@ const About = () => {
                     <div className='flex justify-start border-b border-[#B52B1D]'>
                         <button
                             onClick={() => setActiveTab({ about: true })}
-                            className=' p-4 text-sm roboto-regular bg-[#B52B1D]'>About</button>
+                            className={`px-4 py-3 text-white text-sm roboto-regular transition-colors duration-500 ${activeTab.about ? 'bg-[#B52B1D]' : ''}`}>About</button>
                         <button
                             onClick={() => setActiveTab({ experience: true })}
-                            className=' p-4 text-sm roboto-regular bg-[#B52B1D]'>Experience</button>
+                            className={`px-4 py-3 text-white text-sm roboto-regular transition-colors duration-500 ${activeTab.experience ? 'bg-[#B52B1D]' : ''}`}>Experience</button>
                         <button
                             onClick={() => setActiveTab({ contact: true })}
-                            className=' p-4 text-sm roboto-regular bg-[#B52B1D]'>Contact</button>
+                            className={`px-4 py-3 text-white text-sm roboto-regular transition-colors duration-500 ${activeTab.contact ? 'bg-[#B52B1D]' : ''}`}>Contact</button>
                     </div>
                     <div>
-                        <h2 className='text-[31px] font-bold bebas-neue-regular'>Exceptional culinary <br /> experience and delicious food</h2>
-                        <p className='roboto-regular text-sm text-black py-2'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ornare non sed est cursus. Vel hac convallis ipsum, facilisi odio pellentesque bibendum viverra tempus. Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna minim veniam nostrud exercitation.</p>
-                        <div className=' flex justify-start items-center gap-5'>
-                            <button className=" bg-[#FEBF00] py-2 px-3">Explore menu</button>
-                            <div className='flex items-center gap-4'>
-                                <FiPhoneCall className=' text-[#B52B1D] font-bold' />
-                                <p className='font-roboto font-bold text-sm text-black'>+91 123 456 7890</p>
-                            </div>
-                        </div>
+                        {
+                            activeTab?.about ?
+                                <AboutTab /> : null
+                        }
+                        {
+                            activeTab?.experience ?
+                                <ExperienceTab /> : null
+                        }
+                        {
+                            activeTab?.contact ?
+                                <ContactTab /> : null
+                        }
                     </div>
                 </div>
             </div>
