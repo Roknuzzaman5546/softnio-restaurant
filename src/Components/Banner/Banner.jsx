@@ -20,7 +20,7 @@ const Banner = () => {
                     <button className=" bg-[#FEBF00] py-2 px-3">Explore menu</button>
                 </div>
                 <div className=' w-1/2'>
-                    <img className='xl:ml-[475px] lg:ml-[450px] md:ml-[366px] ml-[350px] -mb-3' src={bannerStar} alt="" />
+                    <img className='xl:ml-[540px] lg:ml-[450px] md:ml-[366px] ml-[350px] -mb-3' src={bannerStar} alt="" />
                     <img className=' w-full' src={bannerImg} alt="" />
                     <img className='xl:ml-[475px] lg:ml-[386px] md:ml-[366px] ml-[350px -mt-[120px]' src={bannerOffer} alt="" />
                 </div>

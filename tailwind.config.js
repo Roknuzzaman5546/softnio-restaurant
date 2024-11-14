@@ -10,6 +10,9 @@ export default {
         'custom-range': { 'min': '1025px', 'max': '1335px' },
         'custom-md': { 'min': '768px', 'max': '1024px' },
       },
+      fontFamily: {
+        roboto: ['Roboto', 'sans-serif'],
+      },
     },
   },
   plugins: [],
