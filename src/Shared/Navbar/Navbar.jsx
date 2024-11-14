@@ -1,4 +1,5 @@
 import logo from '../../assets/nav/Logo.png'
+import YallowBtn from '../YallowBtn/YallowBtn';
 
 const Navbar = () => {
     return (
@@ -14,7 +15,9 @@ const Navbar = () => {
                     <li className='  raleway-nav'>Contact</li>
                 </ul>
             </div>
-            <button className=" bg-[#FEBF00] py-2 px-3">Book a table</button>
+            <YallowBtn>
+                About More
+            </YallowBtn>
         </div>
     );
 };

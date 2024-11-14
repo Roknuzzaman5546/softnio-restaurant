@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react';
 import aboutImg from '../../assets/about/aboutImg.png'
+import aboutIcon1 from '../../assets/about/aboutIcon1.png'
+import aboutIcon2 from '../../assets/about/aboutIcon2.png'
+import aboutIcon3 from '../../assets/about/aboutIcon3.png'
 import AboutTab from './AboutTab';
 import ExperienceTab from './ExperienceTab';
 import ContactTab from './ContactTab';
@@ -45,6 +48,35 @@ const About = () => {
                             activeTab?.contact ?
                                 <ContactTab /> : null
                         }
+                    </div>
+                </div>
+            </div>
+            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex justify-start items-center gap-24 mt-16'>
+                <div className=' flex items-center gap-3'>
+                    <div className=' bg-[#FFFFFF] p-2 shadow-xl rounded-full'>
+                        <img className=' w-[80%] mx-auto' src={aboutIcon2} alt="" />
+                    </div>
+                    <div>
+                        <h3 className='bebas-neue-regular text-lg'>fast delivery</h3>
+                        <p className='roboto-regular text-sm'>Within 30 minutes</p>
+                    </div>
+                </div>
+                <div className=' flex items-center gap-3'>
+                    <div className=' bg-[#FFFFFF] p-2 shadow-xl rounded-full'>
+                        <img className='w-[80%] h-[80%] mx-auto' src={aboutIcon1} alt="" />
+                    </div>
+                    <div>
+                        <h3 className='bebas-neue-regular text-lg'>fast delivery</h3>
+                        <p className='roboto-regular text-sm'>Within 30 minutes</p>
+                    </div>
+                </div>
+                <div className=' flex items-center gap-3'>
+                    <div className=' bg-[#FFFFFF] p-2 shadow-xl rounded-full'>
+                        <img className='w-[80%] mx-auto' src={aboutIcon3} alt="" />
+                    </div>
+                    <div>
+                        <h3 className='bebas-neue-regular text-lg'>fast delivery</h3>
+                        <p className='roboto-regular text-sm'>Within 30 minutes</p>
                     </div>
                 </div>
             </div>

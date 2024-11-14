@@ -2,6 +2,7 @@ import bannerImg from '../../assets/banner/bannerImg.png'
 import bannerStar from '../../assets/banner/bannerStar.png'
 import bannerOffer from '../../assets/banner/Offer .png'
 import Navbar from '../../Shared/Navbar/Navbar';
+import YallowBtn from '../../Shared/YallowBtn/YallowBtn';
 import './Banner.css'
 
 const Banner = () => {
@@ -17,7 +18,11 @@ const Banner = () => {
                         Saudi cuisine
                     </h2>
                     <p className='roboto-regular text-sm text-white py-2'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
-                    <button className=" bg-[#FEBF00] py-2 px-3">Explore menu</button>
+                    <div className=' inline-block'>
+                        <YallowBtn>
+                            About More
+                        </YallowBtn>
+                    </div>
                 </div>
                 <div className=' w-1/2'>
                     <img className='xl:ml-[540px] lg:ml-[450px] md:ml-[366px] ml-[350px] -mb-3' src={bannerStar} alt="" />
