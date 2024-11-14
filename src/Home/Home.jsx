@@ -1,6 +1,6 @@
 import About from "../Components/About/About";
 import Banner from "../Components/Banner/Banner";
-import Carousel from "../Components/Carousel/Carousel";
+import Carousel from "../Components/Carousel/CarouselSection";
 
 const Home = () => {
     return (

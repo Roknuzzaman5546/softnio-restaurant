@@ -18,7 +18,7 @@ const About = () => {
     }, [activeTab]);
 
     return (
-        <div className=' mt-20'>
+        <div className=' mt-20 pb-12'>
             <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex items-start justify-between gap-8'>
                 <div className=' w-full'>
                     <img src={aboutImg} alt="" />

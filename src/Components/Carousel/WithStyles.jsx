@@ -1,15 +1,17 @@
 
-const WithStyles = ({ image, headline }) => {
+const WithStyles = ({ image }) => {
     return (
-        <div className=" flex flex-col items-center">
-            <div className="overflow-hidden rounded-full cursor-pointer ">
+        <div className=" flex flex-col items-center bg-white px-4 py-7">
+            <div className="overflow-hidden">
                 <img
                     src={image}
-                    className='rounded-full transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-lg overflow-hidden '
+                    className='rounded-full transition-transform duration-500 ease-in-out hover:scale-110 hover:shadow-lg overflow-hidden w-[130px] xl:h-[95px] lg:h-[90px]'
                     alt=""
                 />
             </div>
-            <p className=" font-semibold text-lg">{headline}</p>
+            <div className=" border-b-4 border-[#BD1F17] w-1/4 mt-2"></div>
+            <p className=" font-semibold text-lg bebas-neue-regular mb-2 mt-4">vegetables burgers</p>
+            <p className=" font-semibold text-sm roboto-regular">Barbecue Italian cuisine pizza</p>
         </div>
     )
 }

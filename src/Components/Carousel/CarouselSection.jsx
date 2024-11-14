@@ -5,19 +5,21 @@ import CarouselImg1 from '../../assets/Carousel/carousel1.png'
 import CarouselImg2 from '../../assets/Carousel/carousel2.png'
 import CarouselImg3 from '../../assets/Carousel/carousel3.png'
 import CarouselImg4 from '../../assets/Carousel/carous4el.png'
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const Carousel = () => {
+const CarouselSection = () => {
     return (
         <div>
-            <div className='custom-range:px-9 lg:px-[52px] md:px-3'>
-            <div className=' md:mt-[25px] mt-5 max-w-[1280px] mx-auto overflow-visible text-center'>
+            <div className=' bg-[#FBF7F2] py-20'>
+            <div className=' md:mt-[25px] mt-5 max-w-[1280px] custom-range:px-9 lg:px-[52px] md:px-3 mx-auto  text-center'>
                 <Carousel
                     additionalTransfrom={0}
                     arrows
                     autoPlaySpeed={3000}
                     centerMode={false}
                     className=""
-                    containerClass="container"
+                    containerClass=""
                     dotListClass=""
                     draggable
                     focusOnSelect={false}
@@ -35,19 +37,19 @@ const Carousel = () => {
                                 max: 3000,
                                 min: 1350
                             },
-                            items: 8,
+                            items: 4,
                             partialVisibilityGutter: 40,
-                            slidesToSlide: 8 // Number of slides to slide at once on desktop
+                            slidesToSlide: 4 // Number of slides to slide at once on desktop
                         },
                         laptop: {
                             breakpoint: { max: 1350, min: 1024 },
-                            items: 7,
+                            items: 4,
                             partialVisibilityGutter: 30,
-                            slidesToSlide: 7 // Number of slides to slide at once on laptop
+                            slidesToSlide: 4 // Number of slides to slide at once on laptop
                         },
                         tablet: {
                             breakpoint: { max: 1024, min: 700 },
-                            items: 5,
+                            items: 4,
                             partialVisibilityGutter: 30,
                             slidesToSlide: 5 // Number of slides to slide at once on tablet
                         },
@@ -88,6 +90,41 @@ const Carousel = () => {
                             image={CarouselImg4} />
                         <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
                     </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
+                    <div className=' flex flex-col items-center justify-center'>
+                        <WithStyles
+                            image={CarouselImg4} />
+                        <p className=' text-[#323232] md:text-[13px] text-xs font-hurme font-semibold mt-[18px]'>kind</p>
+                    </div>
                 </Carousel>
             </div>
         </div>
@@ -95,11 +132,11 @@ const Carousel = () => {
     );
 };
 
-export default Carousel;
+export default CarouselSection;
 
 const CustomLeftArrow = ({ onClick }) => {
     return (
-        <button onClick={onClick} style={arrowStyles.left} className='shadow-md md:block hidden'>
+        <button onClick={onClick} style={arrowStyles.left} className='shadow-md'>
             <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
         </button>
     );
@@ -118,7 +155,7 @@ const CustomRightArrow = ({ onClick }) => {
 const arrowStyles = {
     left: {
         position: 'absolute',
-        top: '37%',
+        top: '-20%',
         left: 0,
         // bottom: 0,
         transform: 'translateY(-50%)',
