@@ -25,7 +25,7 @@ const CarouselSection = () => {
             heading: "Fruits"
         },
         {
-            image: CarouselImg3,
+            image: CarouselImg1,
             heading: "Sugar"
         },
         {
@@ -37,7 +37,7 @@ const CarouselSection = () => {
             heading: "burger"
         },
         {
-            image: CarouselImg4,
+            image: CarouselImg2,
             heading: "Lacchi"
         },
         {
