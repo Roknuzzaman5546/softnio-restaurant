@@ -2,6 +2,7 @@ import About from "../Components/About/About";
 import Banner from "../Components/Banner/Banner";
 import Carousel from "../Components/Carousel/CarouselSection";
 import Contact from "../Components/Contact/Contact";
+import Testimonial from "../Components/Testimonial/Testimonial";
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <About></About>
             <Carousel></Carousel>
             <Contact></Contact>
+            <Testimonial></Testimonial>
         </div>
     );
 };
