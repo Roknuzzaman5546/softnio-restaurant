@@ -1,7 +1,7 @@
 
 const YallowBtn = ({ children }) => {
     return (
-        <div className="bg-[#FEBF00] px-4 py-3 uppercase text-black font-bold text-sm">
+        <div className="bg-[#FEBF00] px-4 py-3 uppercase text-black font-bold text-sm inline-block cursor-pointer">
             {children}
         </div>
     );

@@ -1,0 +1,6 @@
+.bgContact {
+    background-image: url('../../assets/contact/contactbg.jpg');
+    background-position: center;
+    background-repeat: repeat;
+    background-size: cover;
+}
