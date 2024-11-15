@@ -3,6 +3,7 @@ import Banner from "../Components/Banner/Banner";
 import Carousel from "../Components/Carousel/CarouselSection";
 import Contact from "../Components/Contact/Contact";
 import Testimonial from "../Components/Testimonial/Testimonial";
+import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
             <Carousel></Carousel>
             <Contact></Contact>
             <Testimonial></Testimonial>
+            <Footer></Footer>
         </div>
     );
 };
