@@ -1,23 +1,20 @@
 import bannerImg from '../../assets/banner/bannerImg.png'
 import bannerStar from '../../assets/banner/bannerStar.png'
 import bannerOffer from '../../assets/banner/Offer .png'
-import Navbar from '../../Shared/Navbar/Navbar';
 import YallowBtn from '../../Shared/YallowBtn/YallowBtn';
 import './Banner.css'
 
 const Banner = () => {
     return (
         <div className='bgimg bg-[#BD1F17]'>
-            {/* Navbar import from  Navbar components*/}
-            <Navbar></Navbar>
             {/* banner section */}
-            <div className=' flex justify-between items-center max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 xl:pt-16 lg:pt-12 md:pt-10 pt-5 xl:pb-36 lg:pb-28 md:pb-24 pb-5'>
+            <div className=' flex justify-between items-center max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 xl:pt-40 lg:pt-32 md:pt-10 pt-5 xl:pb-36 lg:pb-28 md:pb-24 pb-5'>
                 <div className=' w-1/2'>
                     <h2 className=" text-5xl font-bold bebas-neue-regular">
                         Taste the authentic
                         Saudi cuisine
                     </h2>
-                    <p className='roboto-regular text-sm text-white py-2'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
+                    <p className='roboto-regular text-sm text-white py-5'>Among the best Saudi chefs in the world, serving <br /> you something beyond flavor. </p>
                     <div className=' inline-block'>
                         <YallowBtn>
                             About More
