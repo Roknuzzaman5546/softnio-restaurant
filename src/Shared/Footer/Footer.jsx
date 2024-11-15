@@ -8,10 +8,10 @@ import { FaInstagramSquare } from "react-icons/fa";
 
 const Footer = () => {
     return (
-        <div className="bgFooter mt-20">
-            <div className=" bg-[#000000CC] bg-blend-saturation max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 text-white py-16">
-                <h2 className="bebas-neue-regular text-4xl text-center">We ready to have you the best dining experiences</h2>
-                <div className=" flex md:flex-row flex-col justify-between mt-10">
+        <div className="bgFooter md:mt-20 mt-8">
+            <div className=" bg-[#000000CC] bg-blend-saturation max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 text-white md:py-16 py-8">
+                <h2 className="bebas-neue-regular md:text-4xl text-3xl text-center">We ready to have you the best dining experiences</h2>
+                <div className=" flex md:flex-row flex-col justify-between md:gap-5 gap-7 mt-10">
                     <div className=" flex flex-col items-center justify-center">
                         <IoMdTime className="text-[#FEBF00] text-lg" />
                         <h4 className="bebas-neue-regular py-3">Opening hours</h4>

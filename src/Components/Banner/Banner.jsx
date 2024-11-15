@@ -21,7 +21,7 @@ const Banner = () => {
                         </YallowBtn>
                     </div>
                 </div>
-                <div className=' md:w-1/2 w-full md:pb-0 pb-24'>
+                <div className=' md:w-1/2 w-full md:pb-0 pb-3'>
                     <img className='xl:ml-[540px] lg:ml-[450px] md:ml-[366px] ml-[290px] -mb-3' src={bannerStar} alt="" />
                     <img className=' w-full' src={bannerImg} alt="" />
                     <img className='xl:ml-[475px] lg:ml-[386px] md:ml-[366px] ml-[200px] md:-mt-[120px] -mt-[128px]' src={bannerOffer} alt="" />

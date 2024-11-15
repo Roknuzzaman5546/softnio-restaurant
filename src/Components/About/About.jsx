@@ -18,7 +18,7 @@ const About = () => {
     }, [activeTab]);
 
     return (
-        <div className=' mt-20 pb-12'>
+        <div className=' md:mt-20 mt-8 pb-12'>
             <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex md:flex-row flex-col items-start justify-between gap-8'>
                 <div className=' w-full'>
                     <img src={aboutImg} alt="" />
@@ -27,13 +27,13 @@ const About = () => {
                     <div className='flex justify-start border-b border-[#B52B1D]'>
                         <button
                             onClick={() => setActiveTab({ about: true })}
-                            className={`px-4 py-3 text-white text-sm roboto-regular transition-colors duration-500 ${activeTab.about ? 'bg-[#B52B1D]' : ''}`}>About</button>
+                            className={`md:px-4 px-3 md:py-3 py-2 text-black text-sm roboto-regular transition-colors duration-500 ${activeTab.about ? 'bg-[#B52B1D] text-white' : ''}`}>About</button>
                         <button
                             onClick={() => setActiveTab({ experience: true })}
-                            className={`px-4 py-3 text-white text-sm roboto-regular transition-colors duration-500 ${activeTab.experience ? 'bg-[#B52B1D]' : ''}`}>Experience</button>
+                            className={`md:px-4 px-3 md:py-3 py-2 text-black text-sm roboto-regular transition-colors duration-500 ${activeTab.experience ? 'bg-[#B52B1D] text-white' : ''}`}>Experience</button>
                         <button
                             onClick={() => setActiveTab({ contact: true })}
-                            className={`px-4 py-3 text-white text-sm roboto-regular transition-colors duration-500 ${activeTab.contact ? 'bg-[#B52B1D]' : ''}`}>Contact</button>
+                            className={`md:px-4 px-3 md:py-3 py-2 text-black text-sm roboto-regular transition-colors duration-500 ${activeTab.contact ? 'bg-[#B52B1D] text-white' : ''}`}>Contact</button>
                     </div>
                     <div>
                         {
@@ -51,7 +51,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex md:flex-row flex-col justify-start md:items-center items-start md:gap-24 gap-10 mt-16'>
+            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex md:flex-row flex-col justify-start md:items-center items-start md:gap-24 gap-10 md:mt-16 mt-12'>
                 <div className=' flex items-center gap-3'>
                     <div className=' bg-[#FFFFFF] p-2 shadow-xl rounded-full'>
                         <img className=' w-[80%] mx-auto' src={aboutIcon2} alt="" />

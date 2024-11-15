@@ -1,6 +1,6 @@
 const WithStyles = ({ image, heading }) => {
     return (
-        <div className=" flex flex-col items-center bg-white px-4 py-7">
+        <div className=" flex flex-col items-center bg-white px-4 py-7 h-full w-full">
             <div className="overflow-hidden">
                 <img
                     src={image}

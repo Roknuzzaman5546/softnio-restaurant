@@ -37,7 +37,7 @@ const Testimonial = () => {
 
 
     return (
-        <div className="max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 mt-24">
+        <div className="max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 md:mt-24 mt-8">
             <div className=" flex justify-between items-center">
                 <div>
                     <div className=' flex gap-2 items-center'>
@@ -61,10 +61,10 @@ const Testimonial = () => {
             </div>
 
 
-            <div className="flex flex-col items-center mt-12">
-                <div className="flex justify-center">
-                    <div className="p-16 bg-[#FEBF00] w-[45%] flex flex-col justify-between">
-                        <p className="roboto-regular p-4">{slides[currentSlide].text}</p>
+            <div className="flex flex-col items-center md:mt-12 mt-8">
+                <div className="flex md:flex-row flex-col-reverse justify-center">
+                    <div className="md:p-16 p-5 bg-[#FEBF00] md:w-[45%] w-full flex flex-col justify-between">
+                        <p className="roboto-regular md:p-4 p-2">{slides[currentSlide].text}</p>
                         <div className="flex justify-between items-center border-b border-[#0A1425]">
                             <div>
                                 <h3 className="bebas-neue-regular text-lg">{slides[currentSlide].name}</h3>
@@ -79,9 +79,21 @@ const Testimonial = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="w-[55%]">
+                    <div className="md:w-[55%] w-full">
                         <img src={slides[currentSlide].image} alt="" />
                     </div>
+                </div>
+            </div>
+            <div className=" flex md:hidden justify-center items-center gap-3 mt-5">
+                <div className=" shadow-2xl p-4 flex flex-col justify-center items-center rounded-full cursor-pointer"
+                    onClick={handlePrev}
+                >
+                    <MdKeyboardArrowLeft className='transition-transform duration-500 ease-in-out hover:scale-110' />
+                </div>
+                <div className=" shadow-2xl p-4 flex flex-col justify-center items-center rounded-full cursor-pointer text-[#BD1F17]"
+                    onClick={handleNext}
+                >
+                    <MdKeyboardArrowRight className='transition-transform duration-500 ease-in-out hover:scale-110' />
                 </div>
             </div>
         </div>
