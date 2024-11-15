@@ -1,5 +1,4 @@
-
-const WithStyles = ({ image }) => {
+const WithStyles = ({ image, heading }) => {
     return (
         <div className=" flex flex-col items-center bg-white px-4 py-7">
             <div className="overflow-hidden">
@@ -10,10 +9,10 @@ const WithStyles = ({ image }) => {
                 />
             </div>
             <div className=" border-b-4 border-[#BD1F17] w-1/4 mt-2"></div>
-            <p className=" font-semibold text-lg bebas-neue-regular mb-2 mt-4">vegetables burgers</p>
+            <p className=" font-semibold text-lg bebas-neue-regular mb-2 mt-4">{heading}</p>
             <p className=" font-semibold text-sm roboto-regular">Barbecue Italian cuisine pizza</p>
         </div>
     )
 }
 
-export default WithStyles
+export default WithStyles;
