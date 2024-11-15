@@ -46,7 +46,7 @@ const Testimonial = () => {
                     </div>
                     <h2 className='bebas-neue-regular text-4xl pt-2'>What Some of my Customers Say</h2>
                 </div>
-                <div className=" flex justify-center items-center gap-3">
+                <div className=" md:flex hidden justify-center items-center gap-3">
                     <div className=" shadow-2xl p-4 flex flex-col justify-center items-center rounded-full cursor-pointer"
                         onClick={handlePrev}
                     >

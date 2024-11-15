@@ -19,7 +19,7 @@ const About = () => {
 
     return (
         <div className=' mt-20 pb-12'>
-            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex items-start justify-between gap-8'>
+            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex md:flex-row flex-col items-start justify-between gap-8'>
                 <div className=' w-full'>
                     <img src={aboutImg} alt="" />
                 </div>
@@ -51,7 +51,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex justify-start items-center gap-24 mt-16'>
+            <div className='max-w-[1280px] mx-auto xl:px-20 lg:px-16 md:px-5 px-5 flex md:flex-row flex-col justify-start md:items-center items-start md:gap-24 gap-10 mt-16'>
                 <div className=' flex items-center gap-3'>
                     <div className=' bg-[#FFFFFF] p-2 shadow-xl rounded-full'>
                         <img className=' w-[80%] mx-auto' src={aboutIcon2} alt="" />

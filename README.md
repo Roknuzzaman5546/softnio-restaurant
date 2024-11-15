@@ -2,7 +2,7 @@
 
 ## Heading
 
-- [Demo]  https://bss-hema.web.app
+- [Demo]  https://restaurant-project-ea398.web.app
 
 This restaurant is a front end site built with  Tailwind Css React.js. It aims to provide the latest food and All restaurant food.
 
@@ -15,7 +15,7 @@ This restaurant is a front end site built with  Tailwind Css React.js. It aims t
 
 ## Demo
 
-Check out the live website: [Hema Live link](https://bss-hema.web.app)
+Check out the live website: [Restaurant Live link](https://restaurant-project-ea398.web.app)
 
 
 ## Technologies
