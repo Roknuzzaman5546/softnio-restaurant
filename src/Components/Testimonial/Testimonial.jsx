@@ -1,7 +1,7 @@
-import { IoArrowBack, IoArrowForward } from "react-icons/io5";
 import videoImg from '../../assets/testimonial/Video.png'
 import testimonialMan from '../../assets/testimonial/testimonialMan.png'
 import { useState } from "react";
+import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 
 const Testimonial = () => {
     const slides = [
@@ -47,15 +47,15 @@ const Testimonial = () => {
                     <h2 className='bebas-neue-regular text-4xl pt-2'>What Some of my Customers Say</h2>
                 </div>
                 <div className=" flex justify-center items-center gap-3">
-                    <div className=" shadow-md p-4 flex flex-col justify-center items-center rounded-full cursor-pointer"
-                    onClick={handlePrev}
+                    <div className=" shadow-2xl p-4 flex flex-col justify-center items-center rounded-full cursor-pointer"
+                        onClick={handlePrev}
                     >
-                        <IoArrowBack className='transition-transform duration-500 ease-in-out hover:scale-110' />
+                        <MdKeyboardArrowLeft className='transition-transform duration-500 ease-in-out hover:scale-110' />
                     </div>
-                    <div className=" shadow-md p-4 flex flex-col justify-center items-center rounded-full cursor-pointer text-[#BD1F17]"
-                    onClick={handleNext}
+                    <div className=" shadow-2xl p-4 flex flex-col justify-center items-center rounded-full cursor-pointer text-[#BD1F17]"
+                        onClick={handleNext}
                     >
-                        <IoArrowForward className='transition-transform duration-500 ease-in-out hover:scale-110' />
+                        <MdKeyboardArrowRight className='transition-transform duration-500 ease-in-out hover:scale-110' />
                     </div>
                 </div>
             </div>
